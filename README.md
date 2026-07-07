@@ -2,7 +2,7 @@
 
 > A curated list of awesome resources for agentic commerce — the protocols, MCP servers, tools, apps, APIs and services powering AI agents that shop, sell and transact. For store owners, developers, agencies and marketers building for the AI era.
 
-Agentic commerce is the shift from humans clicking "buy" to AI agents that build carts, compare products, and complete checkout on a shopper's behalf — coordinated through open standards like the [Agentic Commerce Protocol](https://www.agenticcommerce.dev), Google's Agent Payments Protocol, and the [Model Context Protocol](https://modelcontextprotocol.io). This list gathers the best resources across every commerce platform — Shopify, WooCommerce, BigCommerce, Adobe Commerce and open-source engines — for building, selling and growing in that world.
+Agentic commerce is the shift from humans clicking "buy" to AI agents that build carts, compare products, and complete checkout on a shopper's behalf — coordinated through open standards like the Agentic Commerce Protocol (ACP), Google's Agent Payments Protocol (AP2), and the Model Context Protocol (MCP). This list gathers the best resources across every commerce platform — Shopify, WooCommerce, BigCommerce, Adobe Commerce and open-source engines — for building, selling and growing in that world.
 
 Each category also links a **📚 Further reading** file under [`articles/`](articles/) collecting the best writing on the topic from across the web.
 
@@ -47,7 +47,6 @@ Open standards that let AI agents discover products, build carts, and complete p
 
 MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
 
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Broad reference list of Model Context Protocol servers.
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
 - [Shopify shop-chat-agent](https://github.com/Shopify/shop-chat-agent) - Reference Shopify app embedding an AI chat widget for product discovery and checkout via MCP.
 - [Shopify Storefront MCP](https://shopify.dev/docs/apps/build/storefront-mcp) - Official Shopify MCP server exposing storefront data and actions to AI agents.

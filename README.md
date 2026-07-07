@@ -11,17 +11,14 @@ Each category also links a **📚 Further reading** file under [`articles/`](art
 - [Understanding Agentic Commerce](#understanding-agentic-commerce)
 - [Agentic Commerce Protocols](#agentic-commerce-protocols)
 - [AI & MCP Servers](#ai--mcp-servers)
-- [Official Platform Resources](#official-platform-resources)
-- [APIs & SDKs](#apis--sdks)
-- [Development Tools & CLI](#development-tools--cli)
-- [Themes & Storefront UI](#themes--storefront-ui)
-- [Apps, Plugins & Extensions](#apps-plugins--extensions)
+- [Shopify](#shopify)
+- [WooCommerce & WordPress](#woocommerce--wordpress)
+- [Other Platforms & Open-source Engines](#other-platforms--open-source-engines)
+- [Headless & Storefront Frameworks](#headless--storefront-frameworks)
 - [Payments, Checkout & Tax](#payments-checkout--tax)
 - [Shipping, Fulfillment & Inventory](#shipping-fulfillment--inventory)
 - [Analytics, CRO & Personalization](#analytics-cro--personalization)
 - [Marketing, SEO & GEO](#marketing-seo--geo)
-- [Learning Resources](#learning-resources)
-- [Communities, Newsletters & Podcasts](#communities-newsletters--podcasts)
 - [Related Awesome Lists](#related-awesome-lists)
 
 ## Understanding Agentic Commerce
@@ -45,66 +42,113 @@ Open standards that let AI agents discover products, build carts, and complete p
 
 ## AI & MCP Servers
 
-MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
+Cross-platform MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Broad reference list of Model Context Protocol servers.
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
-- [Shopify shop-chat-agent](https://github.com/Shopify/shop-chat-agent) - Reference Shopify app embedding an AI chat widget for product discovery and checkout via MCP.
-- [Shopify Storefront MCP](https://shopify.dev/docs/apps/build/storefront-mcp) - Official Shopify MCP server exposing storefront data and actions to AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
 
-## Official Platform Resources
+## Shopify
 
-- [Adobe Commerce (Magento) Developer Docs](https://developer.adobe.com/commerce/) - Documentation for Adobe Commerce and Magento Open Source.
-- [BigCommerce Developer Center](https://developer.bigcommerce.com) - APIs, docs and tools for building on BigCommerce.
+Everything for building on and selling with Shopify.
+
+### Official & Docs
+
 - [Shopify Developer Docs](https://shopify.dev) - Official documentation for building on the Shopify platform.
 - [Shopify Help Center](https://help.shopify.com) - Merchant-facing guides for running a Shopify store.
-- [WooCommerce Developer Resources](https://developer.woocommerce.com) - Developer portal, references and extension guides for WooCommerce.
-- [WooCommerce Documentation](https://woocommerce.com/documentation/) - Official docs for the WooCommerce plugin for WordPress.
 
-### Open-source Platforms
+### APIs & SDKs
 
-- [Bagisto](https://github.com/bagisto/bagisto) - Open-source Laravel ecommerce platform.
-- [Medusa](https://github.com/medusajs/medusa) - Composable, open-source commerce engine built with Node.js.
-- [Saleor](https://github.com/saleor/saleor) - GraphQL-first, open-source ecommerce platform.
-- [Spree](https://github.com/spree/spree) - Open-source Ruby on Rails ecommerce platform.
-- [Vendure](https://github.com/vendurehq/vendure) - Headless open-source commerce framework for Node.js.
-
-## APIs & SDKs
-
-- [BigCommerce REST APIs](https://developer.bigcommerce.com/docs/rest) - Catalog, checkout, orders and storefront APIs for BigCommerce.
 - [Shopify Admin API (GraphQL)](https://shopify.dev/docs/api/admin) - Read and write store data such as products, orders and customers.
-- [Shopify Storefront API](https://shopify.dev/docs/api/storefront) - GraphQL API for building custom storefronts and headless commerce.
 - [shopify-api-js](https://github.com/Shopify/shopify-api-js) - Official Shopify API client library for Node.js.
-- [Stripe API Reference](https://stripe.com/docs/api) - Payments, billing and financial APIs.
-- [woocommerce-rest-api-js-lib](https://github.com/woocommerce/woocommerce-rest-api-js-lib) - Official JavaScript client for the WooCommerce REST API.
-- [WooCommerce REST API Docs](https://woocommerce.github.io/woocommerce-rest-api-docs/) - Reference for the WooCommerce REST API.
+- [Shopify Storefront API](https://shopify.dev/docs/api/storefront) - GraphQL API for building custom storefronts and headless commerce.
 
-## Development Tools & CLI
+### Development Tools & CLI
 
 📚 [Further reading](articles/development.md).
 
 - [Polaris](https://github.com/Shopify/polaris-react) - Shopify's design system and React component library for admin apps.
 - [Shopify CLI](https://github.com/Shopify/cli) - Command-line tool for building apps, themes and extensions.
 - [Shopify Functions Examples](https://github.com/Shopify/function-examples) - Sample projects for building Shopify Functions.
-- [WP-CLI](https://wp-cli.org) - Command-line interface for managing WordPress and WooCommerce sites.
 
-## Themes & Storefront UI
+### Themes & Storefront
 
 - [Dawn](https://github.com/Shopify/dawn) - Shopify's reference Online Store 2.0 theme.
 - [Hydrogen](https://github.com/Shopify/hydrogen) - Shopify's React framework for building custom headless storefronts.
 - [Liquid](https://shopify.github.io/liquid/) - Open-source template language created by Shopify.
-- [Next.js Commerce](https://github.com/vercel/commerce) - High-performance headless commerce storefront starter.
-- [Storefront UI](https://github.com/vuestorefront/storefront-ui) - Component library for building fast ecommerce storefronts.
-- [Vue Storefront (Alokai)](https://github.com/vuestorefront/vue-storefront) - Frontend platform for headless commerce.
 
-## Apps, Plugins & Extensions
+### Apps & Extensions
 
 - [Shopify App Bridge](https://shopify.dev/docs/api/app-bridge) - Library for building embedded apps inside the Shopify admin.
 - [Shopify App Template (Remix)](https://github.com/Shopify/shopify-app-template-remix) - Official starter template for building Shopify apps with Remix.
-- [Snipcart Next.js starter](https://github.com/snipcart/snipcart-nextjs) - Add a shopping cart to any site with Snipcart and Next.js.
+- [Shopify Checkout Extensibility](https://shopify.dev/docs/apps/build/checkout) - Customize the Shopify checkout with extensions.
+
+### AI, MCP & Agents
+
+- [Shopify shop-chat-agent](https://github.com/Shopify/shop-chat-agent) - Reference Shopify app embedding an AI chat widget for product discovery and checkout via MCP.
+- [Shopify Storefront MCP](https://shopify.dev/docs/apps/build/storefront-mcp) - Official Shopify MCP server exposing storefront data and actions to AI agents.
+
+### Learning & Community
+
+- [r/shopify](https://www.reddit.com/r/shopify/) - Subreddit for Shopify merchants and developers.
+- [Shopify Community](https://community.shopify.com) - Official forums for merchants and partners.
+- [Shopify Dev Tutorials](https://shopify.dev/docs/apps) - Step-by-step guides for building on Shopify.
+- [Shopify Learn](https://www.shopify.com/learn) - Free courses and tutorials for merchants and developers.
+- [Shopify Partners](https://www.shopify.com/partners) - Program, resources and community for agencies and developers.
+
+### Guides & Articles
+
+- 📚 [Top Shopify articles & guides](articles/shopify.md) - Curated best developer and merchant writing on Shopify.
+
+## WooCommerce & WordPress
+
+Everything for building and running a WooCommerce store on WordPress.
+
+### Official & Docs
+
+- [WooCommerce Developer Resources](https://developer.woocommerce.com) - Developer portal, references and extension guides for WooCommerce.
+- [WooCommerce Documentation](https://woocommerce.com/documentation/) - Official docs for the WooCommerce plugin for WordPress.
+
+### APIs & SDKs
+
+- [woocommerce-rest-api-js-lib](https://github.com/woocommerce/woocommerce-rest-api-js-lib) - Official JavaScript client for the WooCommerce REST API.
+- [WooCommerce REST API Docs](https://woocommerce.github.io/woocommerce-rest-api-docs/) - Reference for the WooCommerce REST API.
+
+### Development Tools
+
+- [WP-CLI](https://wp-cli.org) - Command-line interface for managing WordPress and WooCommerce sites.
+- [Yoast SEO](https://yoast.com) - SEO plugin for WordPress and WooCommerce stores.
+
+### Extensions & Plugins
+
 - [WooCommerce Extensions Marketplace](https://woocommerce.com/products/) - Directory of official and third-party WooCommerce extensions.
+
+### Learning & Community
+
+- [r/woocommerce](https://www.reddit.com/r/woocommerce/) - Subreddit for the WooCommerce community.
+
+### Guides & Articles
+
+- 📚 [Top WooCommerce articles & guides](articles/woocommerce.md) - Curated best developer and merchant writing on WooCommerce.
+
+## Other Platforms & Open-source Engines
+
+- [Adobe Commerce (Magento) Developer Docs](https://developer.adobe.com/commerce/) - Documentation for Adobe Commerce and Magento Open Source.
+- [Bagisto](https://github.com/bagisto/bagisto) - Open-source Laravel ecommerce platform.
+- [BigCommerce Developer Center](https://developer.bigcommerce.com) - APIs, docs and tools for building on BigCommerce.
+- [BigCommerce REST APIs](https://developer.bigcommerce.com/docs/rest) - Catalog, checkout, orders and storefront APIs for BigCommerce.
+- [Medusa](https://github.com/medusajs/medusa) - Composable, open-source commerce engine built with Node.js.
+- [Saleor](https://github.com/saleor/saleor) - GraphQL-first, open-source ecommerce platform.
+- [Spree](https://github.com/spree/spree) - Open-source Ruby on Rails ecommerce platform.
+- [Vendure](https://github.com/vendurehq/vendure) - Headless open-source commerce framework for Node.js.
+
+## Headless & Storefront Frameworks
+
+- [Next.js Commerce](https://github.com/vercel/commerce) - High-performance headless commerce storefront starter.
+- [Snipcart Next.js starter](https://github.com/snipcart/snipcart-nextjs) - Add a shopping cart to any site with Snipcart and Next.js.
+- [Storefront UI](https://github.com/vuestorefront/storefront-ui) - Component library for building fast ecommerce storefronts.
+- [Vue Storefront (Alokai)](https://github.com/vuestorefront/vue-storefront) - Frontend platform for headless commerce.
 
 ## Payments, Checkout & Tax
 
@@ -117,7 +161,6 @@ MCP servers and AI tooling that connect commerce data and actions to LLM agents.
 - [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.
 - [Razorpay](https://razorpay.com) - India-focused payment gateway with UPI, cards, wallets and instant settlements.
-- [Shopify Checkout Extensibility](https://shopify.dev/docs/apps/build/checkout) - Customize the Shopify checkout with extensions.
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
 
@@ -159,23 +202,7 @@ Marketing tooling — including Generative Engine Optimization (GEO), the practi
 - [Omnisend](https://www.omnisend.com) - Email, SMS and push marketing automation built for ecommerce.
 - [Postscript](https://postscript.io) - SMS marketing built specifically for Shopify merchants.
 - [Refersion](https://www.refersion.com) - Affiliate and influencer marketing program management for ecommerce.
-- [Yoast SEO](https://yoast.com) - SEO plugin for WordPress and WooCommerce stores.
 - [Yotpo](https://www.yotpo.com) - Reviews, loyalty and referrals for ecommerce brands.
-
-## Learning Resources
-
-📚 [Further reading](articles/learning.md).
-
-- [Shopify Dev Tutorials](https://shopify.dev/docs/apps) - Step-by-step guides for building on Shopify.
-- [Shopify Learn](https://www.shopify.com/learn) - Free courses and tutorials for merchants and developers.
-- [WooCommerce Developer Docs](https://developer.woocommerce.com/docs/) - Guides for extending and building on WooCommerce.
-
-## Communities, Newsletters & Podcasts
-
-- [r/shopify](https://www.reddit.com/r/shopify/) - Subreddit for Shopify merchants and developers.
-- [r/woocommerce](https://www.reddit.com/r/woocommerce/) - Subreddit for the WooCommerce community.
-- [Shopify Community](https://community.shopify.com) - Official forums for merchants and partners.
-- [Shopify Partners](https://www.shopify.com/partners) - Program, resources and community for agencies and developers.
 
 ## Related Awesome Lists
 

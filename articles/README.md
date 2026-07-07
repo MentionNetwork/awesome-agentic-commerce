@@ -6,6 +6,8 @@ Curated collections of the best articles, blog posts, guides and papers on agent
 
 - [Understanding Agentic Commerce](understanding-agentic-commerce.md)
 - [AI & MCP](ai-and-mcp.md)
+- [Shopify](shopify.md)
+- [WooCommerce & WordPress](woocommerce.md)
 - [Development](development.md)
 - [Payments & Checkout](payments-checkout.md)
 - [Analytics & CRO](analytics-cro.md)

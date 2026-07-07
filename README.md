@@ -6,11 +6,14 @@ Agentic commerce is the shift from humans clicking "buy" to AI agents that build
 
 Each category also links a **📚 Further reading** file under [`articles/`](articles/) collecting the best writing on the topic from across the web. New to the space? Start with the [glossary](articles/glossary.md) — ACP vs AP2 vs UCP vs MCP, GEO/AEO, llms.txt and friends, in plain language.
 
+**Where to start.** Store owners: Understanding Agentic Commerce, then Agent Readiness & Testing and Marketing, SEO & GEO. Developers: Agentic Commerce Protocols, then AI & MCP Servers and APIs & SDKs. Agencies and marketers: Marketing, SEO & GEO, then the platform sections for your clients' stacks. The platform-specific sections (Shopify, WooCommerce, Amazon, dropshipping) cover the tooling merchants run day to day while entering agentic commerce — AI-first picks wherever possible.
+
 ## Contents
 
 - [Understanding Agentic Commerce](#understanding-agentic-commerce)
 - [Agentic Commerce Protocols](#agentic-commerce-protocols)
 - [Agent Readiness & Testing](#agent-readiness--testing)
+- [Merchant Programs & Agent Platforms](#merchant-programs--agent-platforms)
 - [AI & MCP Servers](#ai--mcp-servers)
 - [Official Platform Resources](#official-platform-resources)
 - [APIs & SDKs](#apis--sdks)
@@ -37,16 +40,28 @@ Foundational reading on what agentic commerce is and why it matters. 📚 [Furth
 - [Agentic Commerce Trends & Statistics (MetaRouter)](https://www.metarouter.io/post/agentic-commerce-trends-statistics) - Data-backed overview of the agentic commerce market.
 - [AI Trends Shaping Agentic Commerce (commercetools)](https://commercetools.com/blog/ai-trends-shaping-agentic-commerce) - Where autonomous agents are redefining digital retail.
 
+### Market Data
+
+- [AI-driven orders on Shopify grew roughly 11x year over year](https://www.shopify.com/blog/aeo-for-ecommerce) - Shopify, 2026. AI-referred traffic grew ~7x over the same period.
+- [71% of AI-attributed Shopify orders came from long-tail niches](https://www.shopify.com/blog/ai-dropshipping) - Shopify, 2026. AI discovery rewards specific, well-structured catalogs over broad ones.
+- [Adding statistics, citations and quotations lifts visibility in generative answers by up to 40%](https://arxiv.org/abs/2311.09735) - Princeton, Georgia Tech, Allen AI & IIT Delhi, KDD 2024. The paper that coined "GEO".
+
 ## Agentic Commerce Protocols
 
 Open standards that let AI agents discover products, build carts, and complete payments across merchants.
+
+| Protocol | Backed by                        | Solves                                                      | Shape                               | Where it runs today                 |
+| -------- | -------------------------------- | ----------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
+| **ACP**  | Stripe + OpenAI                  | Agent-driven checkout                                       | Server-to-server REST API           | ChatGPT Instant Checkout            |
+| **AP2**  | Google + 60+ payment partners    | Proving a human authorized an agent's payment               | Cryptographically signed Mandates   | Payment layer complementing ACP/UCP |
+| **UCP**  | Google + Shopify + 20+ retailers | Full lifecycle: discovery, cart, identity, checkout, orders | JSON manifest at `/.well-known/ucp` | Google AI Mode in Search, Gemini    |
+| **MCP**  | Anthropic (open standard)        | Connecting agents to tools and data                         | Client-server protocol              | Claude, ChatGPT and any MCP client  |
 
 - [Agentic Commerce Protocol (ACP)](https://www.agenticcommerce.dev) - Open standard for agent-driven checkout, developed by Stripe and OpenAI.
 - [ACP Specification](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) - Reference specification, schemas and product-feed spec for ACP.
 - [Agent Payments Protocol (AP2)](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol) - Google's open protocol for secure agent-initiated payments.
 - [AP2 Specification](https://github.com/google-agentic-commerce/AP2) - Reference specification and implementation for AP2, backed by 60+ payment partners.
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) - Open standard for connecting AI assistants to tools, data and commerce actions.
-- [OpenAI Commerce / Instant Checkout](https://developers.openai.com/commerce/) - Developer docs for enabling purchases inside ChatGPT via ACP.
 - [Universal Commerce Protocol (UCP)](https://ucp.dev) - Open standard by Google, Shopify and 20+ partners covering catalog search, cart building, identity, checkout and order management.
 
 ## Agent Readiness & Testing
@@ -56,6 +71,13 @@ Tools that test, score and validate whether a store is ready for AI shopping age
 - [Agentic Commerce Readiness Scanner](https://www.agenticcommerce.shop) - Free scanner from the Agentic Commerce Alliance and Shopware that drives a virtual agent through your store to test AI readability.
 - [Daeri](https://daeri.ai) - Independent testing platform that sends a real AI shopping agent to your store to find products, check price and stock, add to cart and locate policies.
 - [UCP Checker](https://ucptools.dev) - Free validator for `/.well-known/ucp` manifests and Schema.org markup with an AI readiness score and fix suggestions.
+
+## Merchant Programs & Agent Platforms
+
+Programs from AI platforms and payment networks that put merchant catalogs and checkout inside AI assistants.
+
+- [Microsoft Copilot Merchant Program](https://www.microsoft.com/en-us/microsoft-copilot/blog/2025/04/18/introducing-the-copilot-merchant-program/) - Free program surfacing merchant catalogs, price alerts and in-app checkout inside Microsoft Copilot.
+- [OpenAI Commerce / Instant Checkout](https://developers.openai.com/commerce/) - Developer docs for enabling purchases inside ChatGPT via ACP.
 
 ## AI & MCP Servers
 
@@ -87,6 +109,8 @@ MCP servers and AI tooling that connect commerce data and actions to LLM agents.
 ## APIs & SDKs
 
 - [BigCommerce REST APIs](https://developer.bigcommerce.com/docs/rest) - Catalog, checkout, orders and storefront APIs for BigCommerce.
+- [Firmly](https://www.firmly.ai/) - Unified integration connecting merchants to AI agents across UCP, ACP, MCP and AP2, powering native checkout inside Perplexity shopping.
+- [Rye](https://rye.com/) - Universal checkout API letting AI agents purchase from any online merchant with just a product URL and a tokenized payment method.
 - [Shopify Admin API (GraphQL)](https://shopify.dev/docs/api/admin) - Read and write store data such as products, orders and customers.
 - [Shopify Storefront API](https://shopify.dev/docs/api/storefront) - GraphQL API for building custom storefronts and headless commerce.
 - [shopify-api-js](https://github.com/Shopify/shopify-api-js) - Official Shopify API client library for Node.js.
@@ -194,6 +218,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Adyen](https://www.adyen.com) - Global payments platform with unified commerce APIs.
 - [Braintree](https://www.paypal.com/us/braintree) - PayPal's global payment processing with drop-in UI, vaulting and split payments.
 - [Checkout.com](https://www.checkout.com) - Unified global payment processing with fraud tools and detailed APIs.
+- [Mastercard Agent Pay](https://www.mastercard.com/us/en/business/artificial-intelligence/mastercard-agent-pay.html) - Agentic payments technology using tokenized agent credentials so AI agents can transact securely on the Mastercard network.
 - [Mollie](https://www.mollie.com) - European payment processor supporting 40+ local and global payment methods.
 - [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.
@@ -201,6 +226,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Shopify Checkout Extensibility](https://shopify.dev/docs/apps/build/checkout) - Customize the Shopify checkout with extensions.
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
+- [Visa Intelligent Commerce](https://corporate.visa.com/en/products/intelligent-commerce.html) - Visa's platform enabling AI agents to find and buy with tokenized credentials, agent authentication and spend controls.
 
 ## Shipping, Fulfillment & Inventory
 
@@ -234,10 +260,12 @@ Marketing tooling — including Generative Engine Optimization (GEO), the practi
 
 - [Alhena](https://alhena.ai) - AI visibility tracking for product brands — see how products appear across ChatGPT, Gemini and Perplexity shopping answers.
 - [Attentive](https://www.attentive.com) - SMS and email marketing with list growth and automation for retail brands.
+- [GEO Rise](https://georise.app) - Shopify app scoring every product 0–100 on AI readability, then checking ChatGPT, Perplexity and Claude to record who gets recommended.
 - [Klaviyo](https://www.klaviyo.com) - Email and SMS marketing automation built for ecommerce.
 - [llms.txt](https://llmstxt.org) - Proposed standard for a machine-readable file that helps LLMs understand and use website content.
 - [Mailchimp](https://mailchimp.com) - Email marketing, automation and audience management.
 - [Mention Network](https://mention.network) - Measure and improve how your brand and store appear across AI answer engines (GEO / AI visibility).
+- [Meridian](https://apps.shopify.com/meridian) - Shopify app tracking where products and brand appear in ChatGPT, Google AI and other AI-driven search, with sentiment and competitor monitoring.
 - [Okendo](https://www.okendo.io) - Customer reviews, ratings and UGC for direct-to-consumer brands.
 - [Omnisend](https://www.omnisend.com) - Email, SMS and push marketing automation built for ecommerce.
 - [Otterly](https://otterly.ai) - AI search monitoring for brand mentions and citations across ChatGPT, Perplexity and Google AI Overviews.

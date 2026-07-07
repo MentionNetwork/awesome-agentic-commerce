@@ -2,6 +2,7 @@
 
 The best writing on ecommerce marketing, SEO, and Generative Engine Optimization (GEO) — getting your brand and products cited by AI answer engines. Newest-first.
 
+- [Perplexity Shopping: How to Optimize Your Store for AI](https://www.shopify.com/blog/perplexity-shopping) - Shopify, 2026. How Perplexity's shopping surface and Merchant Program work, and how to get products featured in its results.
 - [The GEO Playbook: How (& Why) to Optimize for AI Discovery](https://www.shopify.com/enterprise/blog/generative-engine-optimization) - Shopify, 2026. Reports AI-referred orders grew nearly 13x year over year and lays out steps to get products surfaced by ChatGPT and Google AI Mode.
 - [Answer Engine Optimization (AEO): The Comprehensive Guide](https://cxl.com/blog/answer-engine-optimization-aeo-the-comprehensive-guide/) - CXL, 2026. Reframes optimization from rankings to citations, with a multi-source strategy across Reddit, YouTube and review sites.
 - [The Complete Guide to Ecommerce AI SEO](https://www.triplewhale.com/blog/ai-ecommerce-seo) - Triple Whale, 2026. Practical ecommerce guide to infrastructure, content and off-site authority for AI-driven shopping search.

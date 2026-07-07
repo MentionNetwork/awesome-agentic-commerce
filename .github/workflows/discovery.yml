@@ -1,0 +1,51 @@
+name: Discover New Resources
+
+on:
+  schedule:
+    - cron: '0 7 * * 1' # Mondays 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search GitHub for new candidate repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          SINCE=$(date -u -d '14 days ago' +%Y-%m-%d)
+          : > candidates.md
+          for TOPIC in agentic-commerce acp ucp mcp-commerce ai-shopping; do
+            gh api "search/repositories?q=topic:${TOPIC}+pushed:>${SINCE}&sort=stars&order=desc&per_page=10" \
+              --jq '.items[] | select(.stargazers_count >= 3) | "- [\(.full_name)](\(.html_url)) — ⭐\(.stargazers_count) — \(.description // "no description")"' \
+              >> candidates.md || true
+          done
+          # drop repos already listed in the README, dedupe
+          sort -u candidates.md | while IFS= read -r line; do
+            url=$(echo "$line" | grep -oE 'https://github.com/[^)]+' | head -1)
+            [ -n "$url" ] && ! grep -qF "$url" README.md && echo "$line"
+          done > fresh.md || true
+          if [ -s fresh.md ]; then
+            {
+              echo "Weekly scan found candidate repos not yet on the list. Review, verify quality, and PR the keepers."
+              echo
+              cat fresh.md
+            } > body.md
+            echo "FOUND=1" >> "$GITHUB_ENV"
+          fi
+      - name: Open triage issue
+        if: env.FOUND == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Discovery: new candidate resources ($(date -u +%Y-%m-%d))" \
+            --body-file body.md \
+            --label submission \
+            --repo "$GITHUB_REPOSITORY"

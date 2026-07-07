@@ -1,4 +1,4 @@
-<!-- Thanks for contributing to Awesome Ecommerce! -->
+<!-- Thanks for contributing to Awesome Agentic Commerce! -->
 
 ## What are you adding?
 

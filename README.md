@@ -195,6 +195,7 @@ Everything for building and running a WooCommerce store on WordPress.
 Marketing tooling — including Generative Engine Optimization (GEO), the practice of getting brands and products cited by AI answer engines. 📚 [Further reading](articles/marketing-seo-geo.md).
 
 - [Attentive](https://www.attentive.com) - SMS and email marketing with list growth and automation for retail brands.
+- [Ecommerce AI Visibility Engine](https://github.com/MentionNetwork/ecommerce-ai-visibility-engine) - Open-source engine measuring how AI assistants recommend your store and products, ranked against competing retailers.
 - [Klaviyo](https://www.klaviyo.com) - Email and SMS marketing automation built for ecommerce.
 - [Mailchimp](https://mailchimp.com) - Email marketing, automation and audience management.
 - [Mention Network](https://mention.network) - Measure and improve how your brand and store appear across AI answer engines (GEO / AI visibility).

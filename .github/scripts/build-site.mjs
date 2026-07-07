@@ -1,7 +1,7 @@
 // Builds a static mirror of the list: HTML pages + llms.txt + sitemap + robots.
 // Run from repo root: node .github/scripts/build-site.mjs
 import { marked } from 'marked'
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync, existsSync } from 'node:fs'
 
 const BASE = (process.env.BASE_URL || 'https://mentionnetwork.github.io/awesome-agentic-commerce').replace(/\/$/, '')
 const TITLE = 'Awesome Agentic Commerce'
@@ -23,8 +23,11 @@ function page(title, bodyHtml, canonical, jsonld) {
 <title>${title}</title>
 <meta name="description" content="${DESC}">
 <link rel="canonical" href="${canonical}">
+<link rel="icon" type="image/png" href="${BASE}/media/logo.png">
 <meta property="og:title" content="${title}"><meta property="og:description" content="${DESC}">
 <meta property="og:type" content="website"><meta property="og:url" content="${canonical}">
+<meta property="og:image" content="${BASE}/media/social-preview.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${BASE}/media/social-preview.png">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 <style>${css}</style></head><body>
 ${bodyHtml}
@@ -35,6 +38,7 @@ ${bodyHtml}
 const fixLinks = (md) => md.replace(/\(articles\/([a-z0-9-]+)\.md\)/g, '(articles/$1.html)').replace(/\(articles\/\)/g, '(articles/index.html)')
 
 mkdirSync('dist/articles', { recursive: true })
+if (existsSync('media')) cpSync('media', 'dist/media', { recursive: true })
 
 const readme = readFileSync('README.md', 'utf8')
 const entries = [...readme.matchAll(/^- \[([^\]]+)\]\((https?:[^)]+)\)/gm)]

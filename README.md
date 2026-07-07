@@ -38,6 +38,8 @@ Open standards that let AI agents discover products, build carts, and complete p
 - [Agent Payments Protocol (AP2)](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol) - Google's open protocol for secure agent-initiated payments.
 - [AP2 Specification](https://github.com/google-agentic-commerce/AP2) - Reference specification and implementation for AP2, backed by 60+ payment partners.
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) - Open standard for connecting AI assistants to tools, data and commerce actions.
+- [Universal Commerce Protocol (UCP)](https://ucp.dev) - Open standard from Google and Shopify for agentic checkout, wired into Google AI Mode and Gemini.
+- [UCP Specification](https://github.com/Universal-Commerce-Protocol/ucp) - Reference specification and documentation for UCP, released under Apache 2.0.
 - [OpenAI Commerce / Instant Checkout](https://developers.openai.com/commerce/) - Developer docs for enabling purchases inside ChatGPT via ACP.
 
 ## AI & MCP Servers

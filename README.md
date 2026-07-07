@@ -37,18 +37,22 @@ Foundational reading on what agentic commerce is and why it matters. 📚 [Furth
 Open standards that let AI agents discover products, build carts, and complete payments across merchants.
 
 - [Agentic Commerce Protocol (ACP)](https://www.agenticcommerce.dev) - Open standard for agent-driven checkout, developed by Stripe and OpenAI.
-- [OpenAI Commerce / Instant Checkout](https://developers.openai.com/commerce/) - Developer docs for enabling purchases inside ChatGPT via ACP.
+- [ACP Specification](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) - Reference specification, schemas and product-feed spec for ACP.
 - [Agent Payments Protocol (AP2)](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol) - Google's open protocol for secure agent-initiated payments.
+- [AP2 Specification](https://github.com/google-agentic-commerce/AP2) - Reference specification and implementation for AP2, backed by 60+ payment partners.
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) - Open standard for connecting AI assistants to tools, data and commerce actions.
+- [OpenAI Commerce / Instant Checkout](https://developers.openai.com/commerce/) - Developer docs for enabling purchases inside ChatGPT via ACP.
 
 ## AI & MCP Servers
 
 MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
 
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Broad reference list of Model Context Protocol servers.
+- [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
+- [Shopify shop-chat-agent](https://github.com/Shopify/shop-chat-agent) - Reference Shopify app embedding an AI chat widget for product discovery and checkout via MCP.
 - [Shopify Storefront MCP](https://shopify.dev/docs/apps/build/storefront-mcp) - Official Shopify MCP server exposing storefront data and actions to AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
-- [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Broad reference list of Model Context Protocol servers.
+- [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
 
 ## Official Platform Resources
 
@@ -107,30 +111,56 @@ MCP servers and AI tooling that connect commerce data and actions to LLM agents.
 📚 [Further reading](articles/payments-checkout.md).
 
 - [Adyen](https://www.adyen.com) - Global payments platform with unified commerce APIs.
+- [Braintree](https://www.paypal.com/us/braintree) - PayPal's global payment processing with drop-in UI, vaulting and split payments.
+- [Checkout.com](https://www.checkout.com) - Unified global payment processing with fraud tools and detailed APIs.
+- [Mollie](https://www.mollie.com) - European payment processor supporting 40+ local and global payment methods.
+- [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.
+- [Razorpay](https://razorpay.com) - India-focused payment gateway with UPI, cards, wallets and instant settlements.
 - [Shopify Checkout Extensibility](https://shopify.dev/docs/apps/build/checkout) - Customize the Shopify checkout with extensions.
+- [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
 
 ## Shipping, Fulfillment & Inventory
 
+- [AfterShip](https://www.aftership.com) - Multi-carrier tracking with automated, branded post-purchase delivery notifications.
+- [Cin7](https://www.cin7.com) - Cloud inventory and order management with carrier and sales-channel integrations.
 - [EasyPost](https://www.easypost.com) - Shipping API for labels, tracking and rates across carriers.
+- [Easyship](https://www.easyship.com) - Shipping platform with rate comparison, customs documents and international coverage.
+- [Katana](https://katanamrp.com) - Cloud manufacturing ERP and inventory management for product businesses.
+- [Sendcloud](https://www.sendcloud.com) - European multi-carrier shipping platform with checkout, labels, tracking and returns.
+- [ShipBob](https://www.shipbob.com) - Tech-enabled 3PL with global warehouses and a developer API for fulfillment.
+- [ShipEngine](https://www.shipengine.com) - Multi-carrier shipping API for rate shopping, label creation and tracking.
 - [Shippo](https://goshippo.com) - Multi-carrier shipping API and dashboard.
 
 ## Analytics, CRO & Personalization
 
 📚 [Further reading](articles/analytics-cro.md).
 
+- [Amplitude](https://amplitude.com) - Product and behavioral analytics with experimentation for digital and ecommerce teams.
 - [Google Analytics 4](https://marketingplatform.google.com/about/analytics/) - Web and app analytics with ecommerce tracking.
+- [GrowthBook](https://www.growthbook.io) - Open-source, warehouse-native feature flagging and A/B testing platform.
+- [Hotjar](https://www.hotjar.com) - Heatmaps, session recordings and feedback surveys for UX and CRO.
 - [Matomo](https://matomo.org) - Open-source, privacy-friendly web analytics.
+- [Microsoft Clarity](https://clarity.microsoft.com) - Free session recordings and heatmaps for websites.
 - [PostHog](https://posthog.com) - Open-source product analytics, session replay and experimentation.
+- [Statsig](https://statsig.com) - Experimentation, feature flags and product analytics at scale.
+- [VWO](https://vwo.com) - A/B testing, personalization, heatmaps and session recording for CRO teams.
 
 ## Marketing, SEO & GEO
 
 Marketing tooling — including Generative Engine Optimization (GEO), the practice of getting brands and products cited by AI answer engines. 📚 [Further reading](articles/marketing-seo-geo.md).
 
+- [Attentive](https://www.attentive.com) - SMS and email marketing with list growth and automation for retail brands.
 - [Klaviyo](https://www.klaviyo.com) - Email and SMS marketing automation built for ecommerce.
+- [Mailchimp](https://mailchimp.com) - Email marketing, automation and audience management.
 - [Mention Network](https://mention.network) - Measure and improve how your brand and store appear across AI answer engines (GEO / AI visibility).
+- [Okendo](https://www.okendo.io) - Customer reviews, ratings and UGC for direct-to-consumer brands.
+- [Omnisend](https://www.omnisend.com) - Email, SMS and push marketing automation built for ecommerce.
+- [Postscript](https://postscript.io) - SMS marketing built specifically for Shopify merchants.
+- [Refersion](https://www.refersion.com) - Affiliate and influencer marketing program management for ecommerce.
 - [Yoast SEO](https://yoast.com) - SEO plugin for WordPress and WooCommerce stores.
+- [Yotpo](https://www.yotpo.com) - Reviews, loyalty and referrals for ecommerce brands.
 
 ## Learning Resources
 

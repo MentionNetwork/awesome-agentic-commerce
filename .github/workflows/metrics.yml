@@ -1,0 +1,36 @@
+name: Traffic Metrics
+
+on:
+  schedule:
+    - cron: '0 5 * * 1' # Mondays 05:00 UTC — before the other Monday jobs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append traffic snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p .github/metrics
+          CSV=.github/metrics/traffic.csv
+          [ -f "$CSV" ] || echo "date,views_14d,unique_visitors_14d,clones_14d,stars,top_referrers" > "$CSV"
+          VIEWS=$(gh api "repos/$GITHUB_REPOSITORY/traffic/views" --jq '.count')
+          UNIQUES=$(gh api "repos/$GITHUB_REPOSITORY/traffic/views" --jq '.uniques')
+          CLONES=$(gh api "repos/$GITHUB_REPOSITORY/traffic/clones" --jq '.count')
+          STARS=$(gh api "repos/$GITHUB_REPOSITORY" --jq '.stargazers_count')
+          REFS=$(gh api "repos/$GITHUB_REPOSITORY/traffic/popular/referrers" --jq '[.[].referrer] | join(";")')
+          echo "$(date -u +%Y-%m-%d),$VIEWS,$UNIQUES,$CLONES,$STARS,\"$REFS\"" >> "$CSV"
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/metrics/traffic.csv
+          git diff --cached --quiet || git commit -m "chore: weekly traffic snapshot"
+          git push

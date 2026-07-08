@@ -1,0 +1,6 @@
+# Domains that block automated link checkers
+https://www.linkedin.com/.*
+https://twitter.com/.*
+https://x.com/.*
+https://www.reddit.com/.*
+https://advertising.amazon.com/.*

@@ -4,10 +4,13 @@ Curated collections of the best articles, blog posts, guides and papers on agent
 
 ## Files
 
+- [Glossary](glossary.md) — UCP, ACP, AP2, MCP, GEO and friends, in plain language
 - [Understanding Agentic Commerce](understanding-agentic-commerce.md)
 - [AI & MCP](ai-and-mcp.md)
 - [Shopify](shopify.md)
 - [WooCommerce & WordPress](woocommerce.md)
+- [Amazon](amazon.md)
+- [Dropshipping & Sourcing](dropshipping.md)
 - [Development](development.md)
 - [Payments & Checkout](payments-checkout.md)
 - [Analytics & CRO](analytics-cro.md)

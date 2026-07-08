@@ -1,0 +1,41 @@
+name: Weekly Digest
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Mondays 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Collect entries added this week
+        run: |
+          set -euo pipefail
+          SINCE=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          git log --since="$SINCE" --diff-filter=AM -p -- README.md 'articles/*.md' \
+            | grep -E '^\+\- \[' | sed 's/^+//' | sort -u > added.md || true
+          if [ -s added.md ]; then
+            {
+              echo "New on the list this week:"
+              echo
+              cat added.md
+            } > notes.md
+            echo "FOUND=1" >> "$GITHUB_ENV"
+          fi
+      - name: Publish digest release
+        if: env.FOUND == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="digest-$(date -u +%Y-%m-%d)"
+          gh release create "$TAG" \
+            --title "Weekly digest — $(date -u +%B\ %d,\ %Y)" \
+            --notes-file notes.md \
+            --repo "$GITHUB_REPOSITORY"

@@ -1,0 +1,60 @@
+name: Submit a resource
+description: Suggest a tool, protocol, article or service for the list
+title: "[Submission]: "
+labels: ["submission"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: e.g. Acme Checkout MCP
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Homepage or repository — no affiliate or tracking links.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section does it belong in?
+      options:
+        - Understanding Agentic Commerce
+        - Universal / Agentic Commerce Protocols
+        - Agent Readiness & Testing
+        - AI & MCP Servers
+        - Shopify
+        - WooCommerce & WordPress
+        - Other Platforms & Open-source Engines
+        - Headless & Storefront Frameworks
+        - Amazon
+        - Dropshipping & Sourcing
+        - Payments, Checkout & Tax
+        - Shipping, Fulfillment & Inventory
+        - Analytics, CRO & Personalization
+        - Marketing, SEO & GEO
+        - Related Awesome Lists
+        - 📚 Further reading (articles/)
+        - Other / new section
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it awesome?
+      description: One or two lines — what makes this best-in-class for store owners, developers, agencies or marketers?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Actively maintained and genuinely useful.
+          required: true
+        - label: Not already on the list.
+          required: true

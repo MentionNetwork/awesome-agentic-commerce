@@ -31,3 +31,13 @@ Thanks for taking the time to contribute! Please make sure your suggestion is ge
 ## Reporting issues
 
 Found a dead link, a mislabeled entry, or a better alternative? Open an issue — housekeeping PRs are just as welcome as new entries.
+
+## Badge for listed projects
+
+Is your project on the list? Add the badge to your README:
+
+[![Mentioned in Awesome Agentic Commerce](https://awesome.re/mentioned-badge.svg)](https://github.com/MentionNetwork/awesome-agentic-commerce)
+
+```markdown
+[![Mentioned in Awesome Agentic Commerce](https://awesome.re/mentioned-badge.svg)](https://github.com/MentionNetwork/awesome-agentic-commerce)
+```

@@ -1,0 +1,33 @@
+name: Badge Comment
+
+on:
+  pull_request_target:
+    types: [closed]
+    paths:
+      - README.md
+
+permissions:
+  pull-requests: write
+
+jobs:
+  badge:
+    if: >
+      github.event.pull_request.merged == true &&
+      !contains(fromJSON('["conal-cpu", "leeknowsai", "github-actions[bot]"]'), github.event.pull_request.user.login)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Thank contributor with badge snippet
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Thanks for contributing, @${AUTHOR}! 🎉
+
+          If your project was added to the list, feel free to show it off with the badge:
+
+          [![Mentioned in Awesome Agentic Commerce](https://awesome.re/mentioned-badge.svg)](https://github.com/MentionNetwork/awesome-agentic-commerce)
+
+          \`\`\`markdown
+          [![Mentioned in Awesome Agentic Commerce](https://awesome.re/mentioned-badge.svg)](https://github.com/MentionNetwork/awesome-agentic-commerce)
+          \`\`\`"

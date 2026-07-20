@@ -310,6 +310,8 @@ Marketing tooling — including Generative Engine Optimization (GEO), the practi
 
 Contributions are welcome! Read the [contribution guidelines](contributing.md) first.
 
+Listed here? Add the [Mentioned in Awesome badge](contributing.md#badge-for-listed-projects) to your README.
+
 ---
 
 Maintained by the team at [Mention Network](https://github.com/MentionNetwork), building AI visibility tools for ecommerce.

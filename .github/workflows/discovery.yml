@@ -54,9 +54,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          # indie filter: user-owned repo, 3-3000 stars; top 3 by stars
+          # indie filter: user-owned repo, 3-3000 stars, clearly commerce-related, no crypto spam; top 3 by stars
           sort -t$'\t' -k3,3nr fresh.tsv \
             | awk -F'\t' '$5 == "User" && $3+0 >= 3 && $3+0 <= 3000' \
+            | awk -F'\t' 'BEGIN{IGNORECASE=1} ($1 " " $6) ~ /commerce|shopping|checkout|merchant|storefront|ecommerce|e-commerce|retail|x402/ && ($1 " " $6) !~ /token|coin|crypto|solana|airdrop|exchange|trading/' \
             | head -3 > invites.tsv || true
           [ -s invites.tsv ] || exit 0
           gh issue list --repo "$GITHUB_REPOSITORY" --label invitation --state all --limit 500 --json title --jq '.[].title' > invited.txt || true

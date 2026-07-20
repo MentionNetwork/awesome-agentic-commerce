@@ -2,7 +2,7 @@ name: Discover New Resources
 
 on:
   schedule:
-    - cron: '0 7 * * 1' # Mondays 07:00 UTC
+    - cron: '0 7 * * *' # daily 07:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -14,32 +14,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Search GitHub for new candidate repos
+      - name: Search GitHub for candidate repos (topics + keywords)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          SINCE=$(date -u -d '14 days ago' +%Y-%m-%d)
+          SINCE=$(date -u -d '90 days ago' +%Y-%m-%d)
+          JQ='.[] | [.fullName, .url, (.stargazersCount|tostring), .owner.login, (.owner.type // "User"), (.description // "no description")] | @tsv'
           : > candidates.tsv
           for TOPIC in agentic-commerce acp ucp mcp-commerce ai-shopping; do
-            gh api "search/repositories?q=topic:${TOPIC}+pushed:>${SINCE}&sort=stars&order=desc&per_page=10" \
-              --jq '.items[] | select(.stargazers_count >= 3) | [.full_name, .html_url, (.stargazers_count|tostring), .owner.login, .owner.type, (.description // "no description")] | @tsv' \
-              >> candidates.tsv || true
+            gh search repos --topic "$TOPIC" --updated ">$SINCE" --stars ">=3" --sort stars --limit 10 \
+              --json fullName,url,stargazersCount,owner,description --jq "$JQ" >> candidates.tsv || true
+          done
+          for Q in "agentic commerce" "ai shopping agent" "shopping agent" "agent checkout" "ecommerce agent" "commerce mcp"; do
+            gh search repos "$Q" --updated ">$SINCE" --stars ">=3" --sort stars --limit 10 \
+              --json fullName,url,stargazersCount,owner,description --jq "$JQ" >> candidates.tsv || true
           done
           # drop repos already listed in the README, dedupe
           sort -u candidates.tsv | while IFS=$'\t' read -r name url stars owner otype desc; do
             [ -n "$url" ] && ! grep -qF "$url" README.md && printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$name" "$url" "$stars" "$owner" "$otype" "$desc"
           done > fresh.tsv || true
-          if [ -s fresh.tsv ]; then
+          # triage only candidates never shown in a previous triage/invitation issue
+          gh issue list --repo "$GITHUB_REPOSITORY" --label submission --state all --limit 100 --json body --jq '.[].body' > seen.txt || true
+          gh issue list --repo "$GITHUB_REPOSITORY" --label invitation --state all --limit 500 --json title --jq '.[].title' >> seen.txt || true
+          echo "__sentinel__" >> seen.txt
+          awk -F'\t' 'NR==FNR { seen = seen $0 "\n"; next } index(seen, $2) == 0' seen.txt fresh.tsv > new.tsv || true
+          if [ -s new.tsv ]; then
             {
-              echo "Weekly scan found candidate repos not yet on the list. Review, verify quality, and PR the keepers."
+              echo "Scan found candidate repos not yet on the list (and not previously triaged). Review, verify quality, and PR the keepers."
               echo
-              awk -F'\t' '{printf "- [%s](%s) — ⭐%s — %s\n", $1, $2, $3, $6}' fresh.tsv
+              awk -F'\t' '{printf "- [%s](%s) — ⭐%s — %s\n", $1, $2, $3, $6}' new.tsv
             } > body.md
-            echo "FOUND=1" >> "$GITHUB_ENV"
+            echo "NEW=1" >> "$GITHUB_ENV"
           fi
+          [ -s fresh.tsv ] && echo "FOUND=1" >> "$GITHUB_ENV" || true
       - name: Open triage issue
-        if: env.FOUND == '1'
+        if: env.NEW == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -48,29 +58,31 @@ jobs:
             --body-file body.md \
             --label submission \
             --repo "$GITHUB_REPOSITORY"
-      - name: Invite indie authors (max 3/week, never twice)
+      - name: Invite indie authors (max 3/day, never twice)
         if: env.FOUND == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          # indie filter: user-owned repo, 3-3000 stars, clearly commerce-related, no crypto spam; top 3 by stars
+          # indie filter: user-owned repo, 3-3000 stars, clearly commerce-related, no crypto spam;
+          # skip already-invited authors, then top 3 by stars
+          gh issue list --repo "$GITHUB_REPOSITORY" --label invitation --state all --limit 500 --json title --jq '.[].title' > invited.txt || true
+          echo "Invite: __sentinel__" >> invited.txt
           sort -t$'\t' -k3,3nr fresh.tsv \
             | awk -F'\t' '$5 == "User" && $3+0 >= 3 && $3+0 <= 3000' \
             | awk -F'\t' '{ s = tolower($1 " " $6); if (s ~ /commerce|shopping|checkout|merchant|storefront|retail|x402/ && s !~ /token|coin|crypto|solana|airdrop|exchange|trading/) print }' \
+            > pool.tsv || true
+          awk -F'\t' 'NR==FNR { seen = seen $0 "\n"; next } index(seen, "Invite: " $1 "\n") == 0' invited.txt pool.tsv \
             | head -3 > invites.tsv || true
           [ -s invites.tsv ] || exit 0
-          gh issue list --repo "$GITHUB_REPOSITORY" --label invitation --state all --limit 500 --json title --jq '.[].title' > invited.txt || true
           while IFS=$'\t' read -r name url stars owner otype desc; do
-            TITLE="Invite: ${name}"
-            grep -qxF "$TITLE" invited.txt && continue
-            BODY="Hi @${owner} 👋 — our weekly scan surfaced [${name}](${url}) and it looks like a fit for [Awesome Agentic Commerce](https://github.com/MentionNetwork/awesome-agentic-commerce), a curated list for the agentic commerce space (protocols, GEO, agent-ready ecommerce).
+            BODY="Hi @${owner} 👋 — our scan surfaced [${name}](${url}) and it looks like a fit for [Awesome Agentic Commerce](https://github.com/MentionNetwork/awesome-agentic-commerce), a curated list for the agentic commerce space (protocols, GEO, agent-ready ecommerce).
 
           If you'd like it listed, open a small PR following the [contribution guidelines](https://github.com/MentionNetwork/awesome-agentic-commerce/blob/main/contributing.md) — takes about 2 minutes, and listed projects are welcome to add the [Mentioned in Awesome badge](https://github.com/MentionNetwork/awesome-agentic-commerce/blob/main/contributing.md#badge-for-listed-projects).
 
           Not interested? Just close this issue — we won't ping you again."
             gh issue create \
-              --title "$TITLE" \
+              --title "Invite: ${name}" \
               --body "$BODY" \
               --label invitation \
               --repo "$GITHUB_REPOSITORY"

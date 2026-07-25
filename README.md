@@ -248,6 +248,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.
 - [Razorpay](https://razorpay.com) - India-focused payment gateway with UPI, cards, wallets and instant settlements.
+- [Routeweiler](https://www.routeweiler.com/) - Payments SDK for autonomous agents that auto-handles HTTP 402 across x402, L402, MPP-Tempo, and Stripe SPT, enforces policy & budget, and produces payment traces for auditing.
 - [Rye](https://rye.com/) - Universal checkout API letting AI agents purchase from any online merchant with just a product URL and a tokenized payment method.
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.

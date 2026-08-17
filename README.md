@@ -252,6 +252,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
 - [Visa Intelligent Commerce](https://corporate.visa.com/en/products/intelligent-commerce.html) - Visa's platform enabling AI agents to find and buy with tokenized credentials, agent authentication and spend controls.
+- [Zinc](https://github.com/zincio/skills) - Agent skill and API for discovering, buying, tracking, and returning products across Amazon, Walmart, Target, and 50+ US retailers.
 
 ## Shipping, Fulfillment & Inventory
 

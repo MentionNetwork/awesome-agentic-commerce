@@ -284,6 +284,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 Marketing tooling — including Generative Engine Optimization (GEO), the practice of getting brands and products cited by AI answer engines. 📚 [Further reading](articles/marketing-seo-geo.md).
 
 - [Alhena](https://alhena.ai) - AI visibility tracking for product brands — see how products appear across ChatGPT, Gemini and Perplexity shopping answers.
+- [Animica GEO Audit](https://animica.dev/x402/geo/audit) - Deterministic AI-legibility score for any site, probing it as each real AI crawler to surface the 403s and 429s that hide it from AI answers, with a companion endpoint that emits deployable llms.txt, robots.txt and JSON-LD fixes; pay per call over x402 with a free trial.
 - [Attentive](https://www.attentive.com) - SMS and email marketing with list growth and automation for retail brands.
 - [Ecommerce AI Visibility Engine](https://github.com/MentionNetwork/ecommerce-ai-visibility-engine) - Open-source engine measuring how AI assistants recommend your store and products, ranked against competing retailers.
 - [GEO Rise](https://georise.app) - Shopify app scoring every product 0–100 on AI readability, then checking ChatGPT, Perplexity and Claude to record who gets recommended.

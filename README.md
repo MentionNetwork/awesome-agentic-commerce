@@ -75,6 +75,7 @@ Cross-platform MCP servers and AI tooling that connect commerce data and actions
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
+- [NEX Agent Co. (MCP server + x402 endpoints)](https://github.com/NEXAITECHAU/nex-mcp-server) - Apache-2.0 MCP server exposing 9 x402 USDC endpoints (chat, code, vision, embed, weather, geo, fx, whois, crypto-price) at $0.001-0.01 each. Live at [nexaitechau.github.io](https://nexaitechau.github.io/). A2A + x402 dual-protocol, 23 on-chain NFTs.
 
 ## Shopify
 

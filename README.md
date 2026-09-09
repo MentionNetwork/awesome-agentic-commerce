@@ -224,6 +224,7 @@ Seller tooling and Amazon's own agent-facing APIs, as the marketplace shifts fro
 Supplier networks, fulfillment automation and print-on-demand for lean commerce operations. 📚 [Further reading](articles/dropshipping.md).
 
 - [AutoDS](https://www.autods.com) - All-in-one dropshipping automation platform with AI product sourcing, price/stock monitoring and automated fulfillment across major suppliers.
+- [China Supplier Verification](https://github.com/lu7897859-tech/awesome-china-sourcing-verified) - Open-source verified toolkit for checking Chinese factories before ordering: every method tested on real suppliers with open evidence chains (capital-shrink, hiring-collapse cases), free 30s risk check, plus MCP/x402 endpoints so AI agents can run verification and pay per call. CC0.
 - [CJdropshipping](https://cjdropshipping.com) - Product sourcing and fulfillment network with global warehouses, POD services and direct Shopify/TikTok Shop integration.
 - [Dropship.io](https://www.dropship.io) - Product research tool that tracks real revenue of live Shopify stores to validate winning products before you sell them.
 - [DSers](https://www.dsers.com) - Official AliExpress dropshipping partner for bulk order placement, supplier optimization and inventory syncing.

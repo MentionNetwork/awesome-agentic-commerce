@@ -197,6 +197,7 @@ Everything for building and running a WooCommerce store on WordPress.
 
 ## Headless & Storefront Frameworks
 
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) - Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops.
 - [Next.js Commerce](https://github.com/vercel/commerce) - High-performance headless commerce storefront starter.
 - [Snipcart Next.js starter](https://github.com/snipcart/snipcart-nextjs) - Add a shopping cart to any site with Snipcart and Next.js.
 - [Storefront UI](https://github.com/vuestorefront/storefront-ui) - Component library for building fast ecommerce storefronts.

@@ -75,7 +75,7 @@ Cross-platform MCP servers and AI tooling that connect commerce data and actions
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
-- [HyperNatt Terminal](https://github.com/DIALLOUBE-RESEARCH/hypernatt-terminal) - Production x402 MCP (3 tools · v2.7.0): multi-crypto liquidation radar + Li.Fi cross-chain swap. Flat $0.001 USDC/call via x402 (Base + Solana). MCP https://hypernatt.com/mcp/protocol · [quickstart](https://github.com/DIALLOUBE-RESEARCH/hypernatt-terminal/blob/main/docs/quickstart.md)
+- [HyperNatt Terminal](https://github.com/DIALLOUBE-RESEARCH/hypernatt-terminal) - 6 MCP tools (v2.8.0): liquidation radar, Hyperliquid execution quotes, context comparison, fill reconciliation and Li.Fi cross-chain swap. BTC ETH SOL BNB XRP HYPE ZEC. Free manifest; one daily trial per paid tool/token (up to 28), then $0.001 USDC/call via x402 (Base + Solana). MCP: https://hypernatt.com/mcp/protocol. [Quickstart](https://github.com/DIALLOUBE-RESEARCH/hypernatt-terminal/blob/main/docs/quickstart.md).
 
 ## Shopify
 

@@ -240,6 +240,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 📚 [Further reading](articles/payments-checkout.md).
 
 - [Adyen](https://www.adyen.com) - Global payments platform with unified commerce APIs.
+- [AffixIO](https://www.npmjs.com/package/affixio) - npm Agentic Pay Kit with x402BeforePay host-side action attestation before pay (signed yes/no on host, not person KYC), agenticPay, mcpToolGate, and KYA createAgentTrust.
 - [Braintree](https://www.paypal.com/us/braintree) - PayPal's global payment processing with drop-in UI, vaulting and split payments.
 - [Checkout.com](https://www.checkout.com) - Unified global payment processing with fraud tools and detailed APIs.
 - [Firmly](https://www.firmly.ai/) - Unified integration connecting merchants to AI agents across UCP, ACP, MCP and AP2, powering native checkout inside Perplexity shopping.

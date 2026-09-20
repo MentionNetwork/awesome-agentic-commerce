@@ -212,6 +212,7 @@ Seller tooling and Amazon's own agent-facing APIs, as the marketplace shifts fro
 - [FeedbackWhiz](https://www.feedbackwhiz.com/) - Review and feedback automation that triggers compliant review requests and monitors reviews and account alerts.
 - [Helium 10](https://www.helium10.com/) - All-in-one seller suite covering product research, keyword tracking, AI-assisted listing optimization and PPC automation.
 - [Jungle Scout](https://www.junglescout.com/) - Product research and market intelligence platform with AI-assisted opportunity finding, sales estimates and keyword data.
+- [Limonene](https://limonene.app) - Amazon seller copilot exposing sales, Buy Box, FBA inventory, alerts and fee data to ChatGPT and Claude through a remote MCP connector, with approval-gated store changes.
 - [Pacvue](https://pacvue.com/) - Enterprise commerce-media platform whose Pacvue Agent applies agentic AI to retail media across Amazon, Walmart and 100+ marketplaces.
 - [Perpetua](https://perpetua.io/) - Goal-based advertising software using AI ad engines to automate bidding for Sponsored Products, Brands, Display and DSP.
 - [Quartile](https://www.quartile.com/) - AI-driven ad optimization automating Amazon PPC and DSP bids in real time using Amazon Marketing Stream.

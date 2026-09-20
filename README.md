@@ -245,6 +245,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Firmly](https://www.firmly.ai/) - Unified integration connecting merchants to AI agents across UCP, ACP, MCP and AP2, powering native checkout inside Perplexity shopping.
 - [Mastercard Agent Pay](https://www.mastercard.com/us/en/business/artificial-intelligence/mastercard-agent-pay.html) - Agentic payments technology using tokenized agent credentials so AI agents can transact securely on the Mastercard network.
 - [Mollie](https://www.mollie.com) - European payment processor supporting 40+ local and global payment methods.
+- [Nano (XNO) x402](https://github.com/PANDeveloper001/openai-agents-nano-x402) - Client-side payer for the OpenAI Agents SDK: settle x402 API calls in instant, feeless self-custodied Nano (XNO), green by design.
 - [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.
 - [Razorpay](https://razorpay.com) - India-focused payment gateway with UPI, cards, wallets and instant settlements.

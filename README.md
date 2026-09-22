@@ -244,6 +244,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Checkout.com](https://www.checkout.com) - Unified global payment processing with fraud tools and detailed APIs.
 - [Firmly](https://www.firmly.ai/) - Unified integration connecting merchants to AI agents across UCP, ACP, MCP and AP2, powering native checkout inside Perplexity shopping.
 - [Mastercard Agent Pay](https://www.mastercard.com/us/en/business/artificial-intelligence/mastercard-agent-pay.html) - Agentic payments technology using tokenized agent credentials so AI agents can transact securely on the Mastercard network.
+- [Nano (XNO)](https://docs.nano.org) - Feeless, self-custodied layer-1 settlement rail for agent payments, with instant finality, no gas and no issuer.
 - [Mollie](https://www.mollie.com) - European payment processor supporting 40+ local and global payment methods.
 - [Paddle](https://www.paddle.com) - Merchant-of-record payments and checkout for software and digital goods.
 - [PayPal Developer](https://developer.paypal.com) - APIs and SDKs for accepting PayPal payments.

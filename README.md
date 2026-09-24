@@ -252,6 +252,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
 - [Visa Intelligent Commerce](https://corporate.visa.com/en/products/intelligent-commerce.html) - Visa's platform enabling AI agents to find and buy with tokenized credentials, agent authentication and spend controls.
+- [Vend](https://paypercall.dev/) - Pay-per-call data APIs for AI agents (web extract, search, geo, domain & Nano info) settled on a fee-free native Nano (XNO) rail via the HTTP 402 x402 protocol - no signup, no API keys, no gas fee, no stablecoin. 0.0001 XNO/call. [x402 manifest](https://extract.paypercall.dev/.well-known/x402)
 
 ## Shipping, Fulfillment & Inventory
 

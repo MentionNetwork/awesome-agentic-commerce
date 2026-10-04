@@ -31,6 +31,7 @@ Each category also links a **📚 Further reading** file under [`articles/`](art
 Foundational reading on what agentic commerce is and why it matters. 📚 [Further reading](articles/understanding-agentic-commerce.md).
 
 - [What Is Agentic Commerce? (GR4VY)](https://gr4vy.com/posts/what-is-agentic-commerce-a-complete-guide-for-2026/) - Complete 2026 guide to agentic commerce concepts and infrastructure.
+- [x402 — The Agent Economy: Building and Selling Services Machines Will Pay For](https://synthexforge.com/ebook) - Practitioner's field report on building and selling the x402 services that AI agents discover, pay for, and consume. 121 pages, 12 chapters, 19 runnable code blocks, written from a live production catalogue of 34 USDC-settling endpoints on Base. Covers the HTTP 402 flow, EIP-3009 settlement, machine-buyer pricing measured across a ~2,900-listing market, and why discovery — not the payment rail — is the actual constraint. [Free sample PDF, no signup](https://synthexforge.com/sample).
 - [Agentic Commerce Trends & Statistics (MetaRouter)](https://www.metarouter.io/post/agentic-commerce-trends-statistics) - Data-backed overview of the agentic commerce market.
 - [AI Trends Shaping Agentic Commerce (commercetools)](https://commercetools.com/blog/ai-trends-shaping-agentic-commerce) - Where autonomous agents are redefining digital retail.
 

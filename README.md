@@ -190,6 +190,7 @@ Everything for building and running a WooCommerce store on WordPress.
 - [Bagisto](https://github.com/bagisto/bagisto) - Open-source Laravel ecommerce platform.
 - [BigCommerce Developer Center](https://developer.bigcommerce.com) - APIs, docs and tools for building on BigCommerce.
 - [BigCommerce REST APIs](https://developer.bigcommerce.com/docs/rest) - Catalog, checkout, orders and storefront APIs for BigCommerce.
+- [E-Commerce Agent](https://github.com/VIVPM/ecommerce-agent) - Open-source AI shopping assistant for product search, saved items, carts and orders.
 - [Medusa](https://github.com/medusajs/medusa) - Composable, open-source commerce engine built with Node.js.
 - [Saleor](https://github.com/saleor/saleor) - GraphQL-first, open-source ecommerce platform.
 - [Spree](https://github.com/spree/spree) - Open-source Ruby on Rails ecommerce platform.

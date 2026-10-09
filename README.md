@@ -227,6 +227,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [CJdropshipping](https://cjdropshipping.com) - Product sourcing and fulfillment network with global warehouses, POD services and direct Shopify/TikTok Shop integration.
 - [Dropship.io](https://www.dropship.io) - Product research tool that tracks real revenue of live Shopify stores to validate winning products before you sell them.
 - [DSers](https://www.dsers.com) - Official AliExpress dropshipping partner for bulk order placement, supplier optimization and inventory syncing.
+- [ecommerce-agent](https://github.com/z15346183030/ecommerce-agent) - Open-source multi-agent pipeline that automates product sourcing, 6-dimension scoring, SEO content generation and multi-platform listing for cross-border ecommerce.
 - [Gelato](https://www.gelato.com) - Global print-on-demand platform routing orders to 130+ local print partners in 30+ countries to cut shipping times.
 - [Minea](https://www.minea.com) - Ad-intelligence and product research tool indexing 900M+ ads across Facebook, TikTok and Pinterest to surface trending products.
 - [Printful](https://www.printful.com) - Print-on-demand fulfillment with in-house printing and embroidery for 400+ custom products, integrated with all major platforms.

@@ -251,6 +251,7 @@ Supplier networks, fulfillment automation and print-on-demand for lean commerce 
 - [Rye](https://rye.com/) - Universal checkout API letting AI agents purchase from any online merchant with just a product URL and a tokenized payment method.
 - [Square](https://squareup.com) - Omnichannel payments and POS with developer APIs.
 - [Stripe](https://stripe.com) - Payments infrastructure for online businesses.
+- [Vend](https://paypercall.dev/) - Pay-per-call data APIs for AI agents (web extract, search, geo, domain and Nano info) settled on a fee-free native Nano (XNO) rail over the HTTP 402 x402 protocol, with no signup, no API keys and no gas fee.
 - [Visa Intelligent Commerce](https://corporate.visa.com/en/products/intelligent-commerce.html) - Visa's platform enabling AI agents to find and buy with tokenized credentials, agent authentication and spend controls.
 
 ## Shipping, Fulfillment & Inventory

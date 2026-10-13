@@ -166,6 +166,7 @@ Everything for building and running a WooCommerce store on WordPress.
 - [AutomateWoo](https://automatewoo.com/) - Marketing automation built on trigger/rule/action workflows, covering abandoned carts, follow-ups, SMS and win-back campaigns.
 - [Elementor](https://elementor.com/) - Drag-and-drop WordPress page builder whose WooCommerce Builder designs product pages, cart and checkout without code.
 - [Google for WooCommerce](https://woocommerce.com/products/google-listings-and-ads/) - Official extension syncing the product feed to Google Merchant Center for free listings and Performance Max campaigns.
+- [Product Schema and Crawl Audit](https://wordpress.org/plugins/webkoding-product-schema-crawl-audit/) - Restores the Product JSON-LD that stock WooCommerce block templates omit and audits every product so AI shopping agents can read price, stock and availability.
 - [Rank Math SEO](https://rankmath.com/) - SEO plugin with a dedicated WooCommerce module adding product schema, sitemaps and built-in Content AI.
 - [WooCommerce Bookings](https://woocommerce.com/products/woocommerce-bookings/) - Official extension for selling appointments, reservations, services and rentals with availability rules.
 - [WooCommerce Extensions Marketplace](https://woocommerce.com/products/) - Directory of official and third-party WooCommerce extensions.

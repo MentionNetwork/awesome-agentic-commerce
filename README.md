@@ -69,6 +69,7 @@ Tools that test, score and validate whether a store is ready for AI shopping age
 - [UCP Checker](https://ucptools.dev) - Free validator for `/.well-known/ucp` manifests and Schema.org markup with an AI readiness score and fix suggestions.
 
 ## AI & MCP Servers
+- **[Money Reactor](https://github.com/makar52nn2016-jpg/money-reactor)** - x402 paid micro APIs for AI agents: funded crypto bounty radar + repo honeypot/trust scoring. USDC on Base; MCP over Streamable HTTP, listed in the official MCP Registry.
 
 Cross-platform MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
 

@@ -217,6 +217,7 @@ Seller tooling and Amazon's own agent-facing APIs, as the marketplace shifts fro
 - [Quartile](https://www.quartile.com/) - AI-driven ad optimization automating Amazon PPC and DSP bids in real time using Amazon Marketing Stream.
 - [Sellerboard](https://sellerboard.com/) - Real-time profit analytics for FBA sellers with PPC automation, restock alerts and reimbursement recovery.
 - [SmartScout](https://www.smartscout.com/) - Market intelligence platform with brand, seller and product databases plus an AI Visibility Monitor tracking how often products are recommended by assistants like ChatGPT.
+- [Vendooly](https://vendooly.com/en/) - Remote MCP server linking ChatGPT and Claude to Amazon Seller Central and Amazon Ads through official Amazon APIs, with a before/after preview and explicit approval for every change.
 - [VOC AI](https://www.voc.ai/) - AI voice-of-customer platform analyzing Amazon reviews for sentiment and product insights, exposed via REST API, SDK and an MCP server.
 
 ## Dropshipping & Sourcing

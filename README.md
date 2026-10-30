@@ -64,6 +64,7 @@ Open standards that let AI agents discover products, build carts, and complete p
 
 Tools that test, score and validate whether a store is ready for AI shopping agents.
 
+- [Agentic Catalog by momiji](https://apps.shopify.com/agentic-catalog-readiness) - Audits Shopify catalog readiness for AI shopping (llms.txt, crawler access, JSON-LD), with fix guidance and CSV export. Free plan (5 scans/mo); paid from ¥1,577/month.
 - [Agentic Commerce Readiness Scanner](https://www.agenticcommerce.shop) - Free scanner from the Agentic Commerce Alliance and Shopware that drives a virtual agent through your store to test AI readability.
 - [Daeri](https://daeri.ai) - Independent testing platform that sends a real AI shopping agent to your store to find products, check price and stock, add to cart and locate policies.
 - [UCP Checker](https://ucptools.dev) - Free validator for `/.well-known/ucp` manifests and Schema.org markup with an AI readiness score and fix suggestions.

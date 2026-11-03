@@ -304,6 +304,7 @@ Marketing tooling — including Generative Engine Optimization (GEO), the practi
 ## Related Awesome Lists
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - A curated list of Model Context Protocol servers.
+- [awesome-etsy-mcp](https://github.com/GeminiGeorge22/awesome-etsy-mcp) - Curated list of MCP servers for Etsy sellers, covering the Etsy API, live Etsy search and shop data, and other marketplaces.
 - [awesome-shopify](https://github.com/julionc/awesome-shopify) - A curated list of Shopify resources and open-source projects.
 
 ## Contributing

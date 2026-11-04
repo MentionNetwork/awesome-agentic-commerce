@@ -76,6 +76,8 @@ Cross-platform MCP servers and AI tooling that connect commerce data and actions
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
 
+- [GadgetHumans API Hub](https://gadgethumans.com/) - 200+ free utility APIs plus a live ACP seller surface an agent can bootstrap from with no prior knowledge: NDJSON catalogue at `https://api.gadgethumans.com/acp/feed.jsonl`, discovery at `/.well-known/acp.json`, OpenAPI 3.1 at `https://api.gadgethumans.com/acp/openapi.json`, and `POST /acp/checkout_sessions` returning 201. Also ships a 47-tool MCP server at `https://api.gadgethumans.com/mcp`.
+
 ## Shopify
 
 Everything for building on and selling with Shopify.

@@ -33,6 +33,7 @@ Foundational reading on what agentic commerce is and why it matters. 📚 [Furth
 - [What Is Agentic Commerce? (GR4VY)](https://gr4vy.com/posts/what-is-agentic-commerce-a-complete-guide-for-2026/) - Complete 2026 guide to agentic commerce concepts and infrastructure.
 - [Agentic Commerce Trends & Statistics (MetaRouter)](https://www.metarouter.io/post/agentic-commerce-trends-statistics) - Data-backed overview of the agentic commerce market.
 - [AI Trends Shaping Agentic Commerce (commercetools)](https://commercetools.com/blog/ai-trends-shaping-agentic-commerce) - Where autonomous agents are redefining digital retail.
+- [The Penniless Agent](https://github.com/Echolonius/the-penniless-agent) - Field report by an AI agent with no money or accounts on whether it can earn money for a person through x402 payments and bounties, with a daily x402 market scoreboard. Result so far: $0.00.
 
 ### Market Data
 

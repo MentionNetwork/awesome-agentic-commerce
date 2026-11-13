@@ -192,6 +192,7 @@ Everything for building and running a WooCommerce store on WordPress.
 - [BigCommerce REST APIs](https://developer.bigcommerce.com/docs/rest) - Catalog, checkout, orders and storefront APIs for BigCommerce.
 - [Medusa](https://github.com/medusajs/medusa) - Composable, open-source commerce engine built with Node.js.
 - [Saleor](https://github.com/saleor/saleor) - GraphQL-first, open-source ecommerce platform.
+- [Shelf Ready](https://github.com/Eman2123/Shelf-Ready) - Helps small online stores become buyable by AI shopping agents through product-data audits, a store MCP server, and rule-guarded checkout.
 - [Spree](https://github.com/spree/spree) - Open-source Ruby on Rails ecommerce platform.
 - [Vendure](https://github.com/vendurehq/vendure) - Headless open-source commerce framework for Node.js.
 

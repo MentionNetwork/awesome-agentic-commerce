@@ -75,6 +75,7 @@ Cross-platform MCP servers and AI tooling that connect commerce data and actions
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.
+- [AutoTasker Hub](https://autotasker.highkingflower.com) - Cross-platform hosted MCP server (84 tools, streamable HTTP, no account) exposing pay-per-call China social trending data (Weibo, Douban, Zhihu, Bilibili), search and 24h digest, settled in USDC on Base via x402. Settlement proof: /api/x402/proof.
 
 ## Shopify
 

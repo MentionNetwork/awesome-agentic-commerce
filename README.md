@@ -72,6 +72,7 @@ Tools that test, score and validate whether a store is ready for AI shopping age
 
 Cross-platform MCP servers and AI tooling that connect commerce data and actions to LLM agents. 📚 [Further reading](articles/ai-and-mcp.md).
 
+- [Agent402](https://agent402.tools) - Payment and trust layer for agent commerce: agents find, pay for and verify paid tool calls over x402 and MPP, backed by signed receipts, through an open-source MCP server and API.
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Official PayPal toolkit for integrating commerce actions into AI agents.
 - [Stripe AI Toolkit](https://github.com/stripe/ai) - Official Stripe tooling and MCP server for building AI-powered payment agents.
 - [Stripe MCP Server](https://docs.stripe.com/mcp) - Official remote MCP server exposing Stripe payment operations to AI assistants.

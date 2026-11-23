@@ -296,6 +296,7 @@ Marketing tooling — including Generative Engine Optimization (GEO), the practi
 - [Okendo](https://www.okendo.io) - Customer reviews, ratings and UGC for direct-to-consumer brands.
 - [Omnisend](https://www.omnisend.com) - Email, SMS and push marketing automation built for ecommerce.
 - [Otterly](https://otterly.ai) - AI search monitoring for brand mentions and citations across ChatGPT, Perplexity and Google AI Overviews.
+- [Poptin MCP](https://github.com/Poptin-LTD/Poptin-MCP) - Official remote MCP server for creating email campaigns, building contact segments, and analyzing popup and signup form performance.
 - [Postscript](https://postscript.io) - SMS marketing built specifically for Shopify merchants.
 - [Profound](https://www.tryprofound.com) - Enterprise answer-engine-optimization platform tracking brand visibility across major AI assistants.
 - [Refersion](https://www.refersion.com) - Affiliate and influencer marketing program management for ecommerce.

@@ -33,6 +33,7 @@ Foundational reading on what agentic commerce is and why it matters. 📚 [Furth
 - [What Is Agentic Commerce? (GR4VY)](https://gr4vy.com/posts/what-is-agentic-commerce-a-complete-guide-for-2026/) - Complete 2026 guide to agentic commerce concepts and infrastructure.
 - [Agentic Commerce Trends & Statistics (MetaRouter)](https://www.metarouter.io/post/agentic-commerce-trends-statistics) - Data-backed overview of the agentic commerce market.
 - [AI Trends Shaping Agentic Commerce (commercetools)](https://commercetools.com/blog/ai-trends-shaping-agentic-commerce) - Where autonomous agents are redefining digital retail.
+- [What Is Agentic Commerce? (Stefan Hamann)](https://www.agentic-commerce.sh/en/guides/what-is-agentic-commerce/) - Definition, current examples and the protocols behind agentic commerce, part of a free bilingual handbook.
 
 ### Market Data
 
